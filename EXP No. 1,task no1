@@ -1,0 +1,15 @@
+#include <stdio.h> 
+int main() 
+{ 
+printf("Name = Mansuri Rehan Rafiq \n"); 
+printf("Age = 18 \n"); 
+printf("UIN = 241S082 \n"); 
+printf("Branch = ECS \n"); 
+return 0;
+}
+
+Output:
+Name = Mansuri Rehan Rafiq 
+Age = 18 
+UIN = 241S082 
+Branch = ECS 
