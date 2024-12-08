@@ -1,0 +1,70 @@
+#include <stdio.h> 
+int main()
+{ 
+int rows, cols; 
+printf("Enter the number of rows: "); 
+scanf("%d", &rows); 
+printf("Enter the number of columns: "); 
+scanf("%d", &cols); 
+int matrix1[rows][cols], matrix2[rows][cols], sum[rows][cols]; 
+printf("Enter elements of the first matrix:\n"); 
+for (int i = 0; i < rows; i++) { 
+for (int j = 0; j < cols; j++) { 
+scanf("%d", &matrix1[i][j]); 
+} 
+} 
+printf("Enter elements of the second matrix:\n"); 
+for (int i = 0; i < rows; i++) { 
+for (int j = 0; j < cols; j++) { 
+scanf("%d", &matrix2[i][j]); 
+} 
+} 
+for (int i = 0; i < rows; i++) { 
+for (int j = 0; j < cols; j++) { 
+sum[i][j] = matrix1[i][j] + matrix2[i][j]; 
+} 
+} 
+printf("Sum of the two matrices:\n"); 
+for (int i = 0; i < rows; i++) { 
+for (int j = 0; j < cols; j++) { 
+printf("%d ", sum[i][j]); 
+} 
+printf("\n"); 
+} 
+return 0; 
+}
+
+Output:
+Enter the number of rows: 3
+Enter the number of columns: 4
+Enter elements of the first matrix:
+2
+-3
+10
+5
+2
+7
+9
+0
+8
+7
+6
+46
+Enter elements of the second matrix:
+-1
+-5
+3
+2
+-7
+43
+6
+3
+4
+4
+1
+2
+Sum of the two matrices:
+1 -8 13 7 
+-5 11 15 3 
+12 11 7 8 
+
