@@ -1,0 +1,28 @@
+#include <stdio.h> 
+int main() 
+{ 
+    int chemistry, maths, physics, avg; 
+ 
+    printf("Enter the marks of chemistry:"); 
+    scanf("%d", &chemistry); 
+ 
+    printf("Enter the marks of Maths:"); 
+    scanf("%d", &maths); 
+ 
+    printf("Enter the marks of Physics:"); 
+    scanf("%d", &physics); 
+ 
+    avg = (chemistry + maths + physics) / 3; 
+    printf("The avg of pcm is %d\n", avg); 
+ 
+    avg >= 50 ? printf("Student is eligible for admission") : printf("Student isnt eligible for admission"); 
+ 
+    return 0; 
+} 
+
+Output:
+Enter the marks of chemistry:45
+Enter the marks of Maths:70
+Enter the marks of Physics:45
+The avg of pcm is 53
+Student is eligible for admission
